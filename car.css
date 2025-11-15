@@ -1,0 +1,302 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navbar */
+    #x1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background: black;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+      z-index: 100;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+      transition: background 0.4s;
+    }
+
+    #x1 table {
+      width: 100%;
+      color: white;
+    }
+
+    #x1 th {
+      font-size: 24px;
+      color: #e50914;
+      text-align: left;
+    }
+
+    #x1 td {
+      text-align: center;
+      color: white;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    #x1 td:hover {
+      color: #e50914;
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    #x2 {
+      margin-top: 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #x2 img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      filter: brightness(0.7);
+      transition: transform 10s ease;
+    }
+
+    #x2:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+    }
+
+    .text-over-image {
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      color: white;
+      animation: fadeInUp 2s ease;
+    }
+
+    .text-over-image h1 {
+      font-size: 70px;
+      font-family: "Times New Roman", serif;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .text-over-image p {
+      font-size: 40px;
+      font-family: "Times New Roman", serif;
+      margin-bottom: 20px;
+    }
+
+    .text-over-image button {
+      margin: 10px 10px 0 0;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 25px;
+      background: white;
+      color: black;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.3);
+    }
+
+    .text-over-image button:hover {
+      background: #e50914;
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255,0,0,0.6);
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+	
+	.carousel-inner img {
+  width: 90%;            /* Slightly smaller than full screen */
+  margin: 0 auto;        /* Center the images horizontally */
+  border-radius: 15px;   /* Optional: adds smooth rounded corners */
+  height: 600px;         /* Keep a consistent height */
+  object-fit: cover;     /* Ensure it fills nicely without distortion */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Adds depth */
+}
+
+    /* Carousel Images */
+    .carousel-inner img {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 15px;
+      height: 600px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      filter: brightness(0.8);
+    }
+
+    /* Carousel Caption Styling */
+    .carousel-caption {
+      bottom: 100px;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 12px;
+      padding: 20px 30px;
+      width: 60%;
+      margin: 0 auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .carousel-caption h3 {
+      font-size: 40px;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+      letter-spacing: 2px;
+    }
+
+    .carousel-caption p {
+      font-size: 18px;
+      color: #ddd;
+      margin-top: 10px;
+    }
+
+    .carousel-caption button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      border: none;
+      background: #e50914;
+      color: #fff;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-caption button:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+
+    /* === NEW: Performance Section === */
+    .performance-section {
+      background: radial-gradient(circle at top, #000, #111);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .performance-section h2 {
+      font-size: 40px;
+      color: #e50914;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+
+    .counter-box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .counter-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255,255,255,0.15);
+    }
+
+    .counter-number {
+      font-size: 50px;
+      color: #fff;
+      text-shadow: 0 0 15px #e50914;
+      font-weight: 700;
+    }
+
+    .counter-label {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    /* Models Section */
+    .models-section {
+      padding: 100px 20px;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+
+    .models-section h2 {
+      font-size: 40px;
+      margin-bottom: 50px;
+      font-weight: bold;
+      color: #e50914;
+      animation: fadeIn 2s ease;
+    }
+
+    .card {
+      background: #1a1a1a;
+      color: white;
+      border: none;
+      transition: transform 0.4s, box-shadow 0.4s;
+      border-radius: 15px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+    }
+
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* Parallax */
+    .parallax {
+      background-image: url('mercy2.avif');
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+      text-shadow: 2px 2px 8px black;
+      letter-spacing: 3px;
+      animation: fadeIn 3s ease;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #e50914;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @media (max-width: 768px) {
+      .text-over-image h1 {font-size: 40px;}
+      .text-over-image p {font-size: 25px;}
+    }
+ 
